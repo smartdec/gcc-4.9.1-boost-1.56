@@ -653,7 +653,7 @@ for ar in ${ARS[@]} ; do
         if (( $run_conf )) ; then
             docmd $ar $sd/configure --help
             docmd $ar $sd/configure ${CONF_ARGS[@]}
-            docmd $ar make
+            docmd $ar make -j4
             docmd $ar make install
         fi
         if (( $run_boost_bootstrap )) ; then
