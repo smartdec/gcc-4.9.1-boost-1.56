@@ -523,6 +523,7 @@ for ar in ${ARS[@]} ; do
                     --enable-languages='c,c++'
                     --enable-lto
                     --enable-libssp
+                    --disable-multilib
                     --prefix=${RTFDIR}
                     --with-cloog=${RTFDIR}
                     --with-gmp=${RTFDIR}
